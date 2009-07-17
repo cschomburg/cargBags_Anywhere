@@ -1,0 +1,21 @@
+cargBags_Anywhere Changelog
+1.2
+- following core changes of cargBags 1.3
+
+1.1
+- rewritten LoadItemInfo to support cargBags 1.1
+
+1.0.4
+- well, and now it actually works :/
+
+1.0.3
+- new pipe function: handler.GetContainerItemLink(bagID, slotID)
+- new pipe function: handler.GetContainerItemInfo(bagID, slotID)
+
+1.0.2
+- fixed bank not saving
+
+1.0.1
+- fixed error occuring on splitting stacks in the bank frame
+- new function: handler:GetPlayer(realm, player, database)
+- new callback function: handler:PostSetPlayer(realm, player, database)

@@ -1,0 +1,11 @@
+## Interface: 30200
+## Title: cargBags_Anywhere
+## Author: Cargor
+## Version: 1.3
+## X-eMail: xconstruct@gmail.com
+## Notes: Anywhere bags for cargBags
+## RequiredDeps: cargBags
+## SavedVariables: cB_Anywhere
+
+core.lua
+plugin.lua
