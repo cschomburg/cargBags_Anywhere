@@ -23,7 +23,7 @@ local curr, realm, player
 local C2I, I2C = cargBags.C2I, cargBags.I2C
 
 local function shortLink(link)
-	return link and link:match('item:(%-?%d+):0:0:0:0:0:0:0') or link and link:match('item:(%-?%d+)') or link
+	return link and (link:match('item:(%-?%d+):0:0:0:0:0:0:0') or link:match('item:(%-?%d+)') or link)
 end
 
 function Anywhere:VARIABLES_LOADED()
@@ -40,7 +40,6 @@ function Anywhere:VARIABLES_LOADED()
 	wThis = this
 	this['money'] = GetMoney()
 	curr = realm and player and db[realm] and db[realm][player] or this
-	if(cargBags:GetHandler() == handler) then cargBags:UpdateBags() end
 end
 
 function Anywhere:PLAYER_MONEY()
